@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// this class is not currently used
 public class RailWaySpikeController : MonoBehaviour
 {
     private float spikePosition;
@@ -20,14 +21,4 @@ public class RailWaySpikeController : MonoBehaviour
         
         
 	}
-
-    private void OnTriggerEnter(Collision2D collision)
-    {
-        canPlayerHammer = true;
-    }
-
-    public bool getCanPlayerHammer()
-    {
-        return canPlayerHammer;
-    }
 }
