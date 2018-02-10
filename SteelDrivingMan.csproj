@@ -282,10 +282,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BackGroundMoveMent.cs" />
-    <Compile Include="Assets\Scripts\JohnHenryController.cs" />
-    <Compile Include="Assets\Scripts\RailWaySpikeController.cs" />
-    <Compile Include="Assets\Scripts\ScoreController.cs" />
+    <Compile Include="Assets\Scripts\GamePlaySceneScripts\BackGroundMoveMent.cs" />
+    <Compile Include="Assets\Scripts\GamePlaySceneScripts\HealthBarController.cs" />
+    <Compile Include="Assets\Scripts\GamePlaySceneScripts\JohnHenryController.cs" />
+    <Compile Include="Assets\Scripts\GamePlaySceneScripts\RailWaySpikeController.cs" />
+    <Compile Include="Assets\Scripts\GamePlaySceneScripts\ScoreController.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\PlayButton.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\QuitButton.cs" />
+    <Compile Include="Assets\Scripts\ScoreScreenScripts\GotBackToMenuButtonScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
