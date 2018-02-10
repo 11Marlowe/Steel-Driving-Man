@@ -19,6 +19,7 @@ public class BackGroundMoveMent : MonoBehaviour
     public float setBackAmt;
     // how much the background's speed increases when the score increases
     public float speedIncrease;
+    public Sprite normSpike;
 
 	// Use this for initialization
 	void Start ()
@@ -46,6 +47,11 @@ public class BackGroundMoveMent : MonoBehaviour
         // if the background has made its way out of the screen set it back to the beginning
         if(background.position.y > 2.15f)
         {
+            foreach(GameObject spike in railwaySpikes)
+            {
+                spike.GetComponent<SpriteRenderer>().sprite = normSpike;
+                spike.GetComponent<RailWaySpikeController>().setWasHit(false);
+            }
             background.Translate(backToStart);
         }
     }

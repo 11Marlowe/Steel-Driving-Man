@@ -4,20 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PlayButton : MonoBehaviour {
-
-    private Button btn;
+public class PlayButton : MonoBehaviour
+{
+    public Button playBtn;
+    public Sprite playBtnClicked;
 
     private void Start()
     {
-        btn = this.GetComponent<Button>();
-        btn.onClick.AddListener(loadLevel);
+        playBtn.onClick.AddListener(loadGamePlayScene);
     }
 
-    public void loadLevel()
+    public void loadGamePlayScene()
     {
+        playBtn.GetComponent<Image>().sprite = playBtnClicked;
         SceneManager.LoadScene("GamePlay");
     }
-
-
 }

@@ -7,6 +7,7 @@ public class HealthBarController : MonoBehaviour
     public Sprite oneHealthLost;
     public Sprite twoHealthLost;
     public Sprite noHealth;
+    // the spriterenderer of the healthbar which will allow us to change its sprite
     private SpriteRenderer healthBarSprite;
 
 	// Use this for initialization
@@ -21,17 +22,18 @@ public class HealthBarController : MonoBehaviour
 		
 	}
 
-    public void updateHealth(int health)
+    // change the healthbars sprite based on how much health the player has left
+    public void updateHealth(int playerHealth)
     {
-        if(health == 2)
+        if(playerHealth == 2)
         {
             healthBarSprite.sprite = oneHealthLost;
         }
-        else if(health == 1)
+        else if(playerHealth == 1)
         {
             healthBarSprite.sprite = twoHealthLost;
         }
-        else if(health == 0)
+        else if(playerHealth == 0)
         {
             healthBarSprite.sprite = noHealth;
         }

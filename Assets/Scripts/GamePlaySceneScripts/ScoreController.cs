@@ -8,7 +8,7 @@ public class ScoreController : MonoBehaviour
     // this variable represents the text that appears on the screen
     private Text scoreText;
     // this is the variable that keeps track of the score
-    private int score;
+    public static int score;
 
 	// Use this for initialization
 	void Start ()

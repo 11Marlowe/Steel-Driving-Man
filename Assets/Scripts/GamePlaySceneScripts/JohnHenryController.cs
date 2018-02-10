@@ -19,6 +19,9 @@ public class JohnHenryController : MonoBehaviour
     private int health;
     // the script controlling the healthBar for the player
     public HealthBarController lifeBar;
+    private bool spikeWasHit;
+    private GameObject currentSpike;
+    public Sprite spikeDownSprite;
 
 	// Use this for initialization
 	void Start ()
@@ -27,22 +30,13 @@ public class JohnHenryController : MonoBehaviour
         railwaySpike = GameObject.FindGameObjectsWithTag("spike");
         canHammer = false;
         health = 3;
+        spikeWasHit = false;
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {   
-        // if the player hits the space bar and canHammer is true then increase the score otherwise lose health
-        if (Input.GetKeyDown(KeyCode.Space) && canHammer)
-        {
-            score.increaseScore();
-            canHammer = false;
-        }
-        else if(Input.GetKeyDown(KeyCode.Space) && !canHammer)
-        {
-            health--;
-            lifeBar.updateHealth(health);
-        }
+        
         
         // check each railway spike to see if any of them are in the target area for the player to hit
         // if they are then make canHammer true and highligh the spike, otherwise make sure the spike is not highlighted
@@ -53,11 +47,26 @@ public class JohnHenryController : MonoBehaviour
             {
                 spike.GetComponent<RailWaySpikeController>().highlightSpike();
                 canHammer = true;
+                currentSpike = spike;
             }
             else
             {
                 spike.GetComponent<RailWaySpikeController>().returnToNormal();
             }
+        }
+
+        // if the player hits the space bar and canHammer is true then increase the score otherwise lose health
+        if (Input.GetKeyDown(KeyCode.Space) && canHammer)
+        {
+            score.increaseScore();
+            canHammer = false;
+            currentSpike.GetComponent<RailWaySpikeController>().setWasHit(true);
+            currentSpike.GetComponent<SpriteRenderer>().sprite = spikeDownSprite;
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && !canHammer)
+        {
+            health--;
+            lifeBar.updateHealth(health);
         }
 
         // if the players health is at 0 then the game is over, go to the score screen

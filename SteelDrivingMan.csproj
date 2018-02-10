@@ -289,7 +289,9 @@
     <Compile Include="Assets\Scripts\GamePlaySceneScripts\ScoreController.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\PlayButton.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\QuitButton.cs" />
+    <Compile Include="Assets\Scripts\ScoreScreenScripts\FinalScoreScript.cs" />
     <Compile Include="Assets\Scripts\ScoreScreenScripts\GotBackToMenuButtonScript.cs" />
+    <Compile Include="Assets\Scripts\ScoreScreenScripts\PlayAgainButtonScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
