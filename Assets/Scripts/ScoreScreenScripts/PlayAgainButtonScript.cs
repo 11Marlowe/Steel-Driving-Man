@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class PlayAgainButtonScript : MonoBehaviour
 {
     public Button playAgainBtn;
+    public Sprite playPressed;
 
     // Use this for initialization
     void Start()
@@ -16,6 +17,7 @@ public class PlayAgainButtonScript : MonoBehaviour
 
     public void playAgain()
     {
+        playAgainBtn.GetComponent<Image>().sprite = playPressed;
         SceneManager.LoadScene("GamePlay");
     }
 }

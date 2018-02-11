@@ -6,8 +6,9 @@ public class BackGroundMoveMent : MonoBehaviour
 {
     private Transform background;
     // this array holds all of the railway spike objects
-    private GameObject[] railwaySpikes;
+    private RailWaySpikeController[] railwaySpikes;
     private GameObject[] machineSpikes;
+    private SpriteRenderer[] machineSpikeSprites;
     // instance of the score controller script so we can get the current score
     public ScoreController scoreScript;
     private int score;
@@ -29,7 +30,8 @@ public class BackGroundMoveMent : MonoBehaviour
         background = GetComponent<Transform>();
         backgroundMovement = new Vector3(0, 1.0f, 0);
         backToStart = new Vector3(0, setBackAmt, 0);
-        railwaySpikes = GameObject.FindGameObjectsWithTag("spike");
+        railwaySpikes = gameObject.GetComponentsInChildren<RailWaySpikeController>();
+        machineSpikeSprites = gameObject.GetComponentsInChildren<SpriteRenderer>();
         machineSpikes = GameObject.FindGameObjectsWithTag("machineSpike");
         score = 0;
     }
@@ -48,21 +50,27 @@ public class BackGroundMoveMent : MonoBehaviour
         background.position += backgroundMovement * speed;
 		
         // if the background has made its way out of the screen set it back to the beginning
-        if(background.position.y > 2.15f)
+        if(background.position.y >= 2.15f && CompareTag("BackgroundTop"))
         {
-            /*foreach(GameObject machSpike in machineSpikes)
-            {
-                machSpike.GetComponent<SpriteRenderer>().sprite = normSpikeMach;
-                machSpike.GetComponent<RailWaySpikeController>().setWasHit(false);
-            }*/
 
             background.Translate(backToStart);
 
-            foreach (GameObject spike in railwaySpikes)
+            foreach (RailWaySpikeController spike in railwaySpikes)
             {
-                spike.GetComponent<SpriteRenderer>().sprite = normSpike;
-                spike.GetComponent<RailWaySpikeController>().setWasHit(false);
+                spike.setWasHit(false);
+                spike.machineHit(false);
+            }  
+        }
+        else if(background.position.y >= 2.15f && CompareTag("BackgroundBottom"))
+        {
+            background.Translate(backToStart);
+
+            foreach (RailWaySpikeController spike in railwaySpikes)
+            {
+                spike.setWasHit(false);
+                spike.machineHit(false);
             }
         }
+               
     }
 }

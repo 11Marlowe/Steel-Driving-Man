@@ -285,6 +285,7 @@
     <Compile Include="Assets\Scripts\GamePlaySceneScripts\BackGroundMoveMent.cs" />
     <Compile Include="Assets\Scripts\GamePlaySceneScripts\HealthBarController.cs" />
     <Compile Include="Assets\Scripts\GamePlaySceneScripts\JohnHenryController.cs" />
+    <Compile Include="Assets\Scripts\GamePlaySceneScripts\MachineScript.cs" />
     <Compile Include="Assets\Scripts\GamePlaySceneScripts\RailWaySpikeController.cs" />
     <Compile Include="Assets\Scripts\GamePlaySceneScripts\ScoreController.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\PlayButton.cs" />

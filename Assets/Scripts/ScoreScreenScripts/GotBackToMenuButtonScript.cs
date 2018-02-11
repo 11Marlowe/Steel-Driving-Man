@@ -8,6 +8,7 @@ public class GotBackToMenuButtonScript : MonoBehaviour
 {
 
     public Button goBackToMenuBtn;
+    public Sprite quitPressed;
 
 	// Use this for initialization
 	void Start ()
@@ -17,6 +18,7 @@ public class GotBackToMenuButtonScript : MonoBehaviour
 
     public void goBackToMenu()
     {
+        goBackToMenuBtn.GetComponent<Image>().sprite = quitPressed;
         SceneManager.LoadScene("MainMenu");
     }
 }

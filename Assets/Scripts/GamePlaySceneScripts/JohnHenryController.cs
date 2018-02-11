@@ -22,6 +22,7 @@ public class JohnHenryController : MonoBehaviour
     private bool spikeWasHit;
     private GameObject currentSpike;
     public Sprite spikeDownSprite;
+    // add some sort of animation field variable
 
 	// Use this for initialization
 	void Start ()
@@ -59,12 +60,13 @@ public class JohnHenryController : MonoBehaviour
             score.increaseScore();
             canHammer = false;
             currentSpike.GetComponent<RailWaySpikeController>().setWasHit(true);
-            currentSpike.GetComponent<SpriteRenderer>().sprite = spikeDownSprite;
+            // this is where animation and sound should play
         }
         else if (Input.GetKeyDown(KeyCode.Space) && !canHammer)
         {
             health--;
             lifeBar.updateHealth(health);
+            // if they miss the animation still play
         }
         else
         {

@@ -7,6 +7,8 @@ TagManager:
   - spike
   - scoreKeeper
   - machineSpike
+  - BackgroundTop
+  - BackgroundBottom
   layers:
   - Default
   - TransparentFX

@@ -11,18 +11,32 @@ public class RailWaySpikeController : MonoBehaviour
     public Sprite spikeDownSprite;
     public Sprite spikeDownSpriteLeft;
     private bool wasHit;
+    private bool machineWasHit;
 
 	// Use this for initialization
 	void Start ()
     {
         spikeSprite = GetComponent<SpriteRenderer>();
         wasHit = false;
+        machineWasHit = false;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
+        if(getWasHit() && CompareTag("spike"))
+        {
+            spikeSprite.sprite = spikeDownSprite;
+        }
 
+        if(CompareTag("machineSpike") && machineWasHit)
+        {
+            spikeSprite.sprite = spikeDownSpriteLeft;
+        }
+        else if(CompareTag("machineSpike"))
+        {
+            spikeSprite.sprite = nonHighlightedSpike;
+        }
 	}
 
     // return the sprike to its non-highlighted state
@@ -48,8 +62,15 @@ public class RailWaySpikeController : MonoBehaviour
         else
         {
             spikeSprite.sprite = highlightedSpike;
+        } 
+    }
+
+    public void spikeDown()
+    {
+        if(getWasHit())
+        {
+            spikeSprite.sprite = spikeDownSprite;
         }
-        
     }
 
     public void setWasHit(bool hit)
@@ -60,5 +81,10 @@ public class RailWaySpikeController : MonoBehaviour
     public bool getWasHit()
     {
         return wasHit;
+    }
+
+    public void machineHit(bool hit)
+    {
+        machineWasHit = hit;
     }
 }

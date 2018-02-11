@@ -17,6 +17,6 @@ public class FinalScoreScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        scoreText.text = "Final Score: " + finalScore; 
+        scoreText.text = "       " + finalScore; 
 	}
 }
