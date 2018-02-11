@@ -36,8 +36,6 @@ public class JohnHenryController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {   
-        
-        
         // check each railway spike to see if any of them are in the target area for the player to hit
         // if they are then make canHammer true and highligh the spike, otherwise make sure the spike is not highlighted
         foreach (GameObject spike in railwaySpike)
@@ -67,6 +65,10 @@ public class JohnHenryController : MonoBehaviour
         {
             health--;
             lifeBar.updateHealth(health);
+        }
+        else
+        {
+            canHammer = false;
         }
 
         // if the players health is at 0 then the game is over, go to the score screen

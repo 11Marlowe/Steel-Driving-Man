@@ -161,6 +161,190 @@ MonoBehaviour:
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
     type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
+--- !u!1 &69219085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 69219086}
+  - component: {fileID: 69219088}
+  - component: {fileID: 69219087}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &69219086
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 69219085}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: 0.68, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1230777413}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &69219087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 69219085}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
+    type: 3}
+--- !u!212 &69219088
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 69219085}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!1 &144954277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 144954278}
+  - component: {fileID: 144954280}
+  - component: {fileID: 144954279}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &144954278
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 144954277}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: 0.052, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1230777413}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &144954279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 144954277}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
+    type: 3}
+--- !u!212 &144954280
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 144954277}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &159111813 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1854997306760418, guid: 23d3d75c286d96047bf4fa95154bf36a,
@@ -180,6 +364,8 @@ MonoBehaviour:
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
     type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
 --- !u!1 &191028907
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +377,7 @@ GameObject:
   - component: {fileID: 191028909}
   - component: {fileID: 191028910}
   m_Layer: 0
-  m_Name: railroad-spike
+  m_Name: railroad-spike-henry
   m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -268,6 +454,9 @@ MonoBehaviour:
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
     type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
+    type: 3}
 --- !u!1 &233367216 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1854997306760418, guid: 23d3d75c286d96047bf4fa95154bf36a,
@@ -287,6 +476,8 @@ MonoBehaviour:
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
     type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
 --- !u!1 &337163802
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,6 +643,96 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+--- !u!1 &425743372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 425743373}
+  - component: {fileID: 425743375}
+  - component: {fileID: 425743374}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &425743373
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 425743372}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: -0.26099992, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 778593388}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &425743374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 425743372}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
+--- !u!212 &425743375
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 425743372}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!1001 &570164000
@@ -495,7 +776,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1854997306760418, guid: 23d3d75c286d96047bf4fa95154bf36a, type: 2}
       propertyPath: m_Name
-      value: railroad-spike
+      value: railroad-spike-henry
       objectReference: {fileID: 0}
     - target: {fileID: 1854997306760418, guid: 23d3d75c286d96047bf4fa95154bf36a, type: 2}
       propertyPath: m_TagString
@@ -536,6 +817,190 @@ MonoBehaviour:
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
     type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
+    type: 3}
+--- !u!1 &603193033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 603193034}
+  - component: {fileID: 603193036}
+  - component: {fileID: 603193035}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603193034
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 603193033}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: 0.978, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1230777413}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &603193035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 603193033}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
+    type: 3}
+--- !u!212 &603193036
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 603193033}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!1 &635040712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 635040713}
+  - component: {fileID: 635040715}
+  - component: {fileID: 635040714}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &635040713
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 635040712}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: 0.048000097, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 778593388}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &635040714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 635040712}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
+--- !u!212 &635040715
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 635040712}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1001 &645681761
 Prefab:
   m_ObjectHideFlags: 0
@@ -587,6 +1052,10 @@ Prefab:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1854997306760418, guid: 23d3d75c286d96047bf4fa95154bf36a, type: 2}
+      propertyPath: m_Name
+      value: railroad-spike-henry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23d3d75c286d96047bf4fa95154bf36a, type: 2}
   m_IsPrefabParent: 0
@@ -613,6 +1082,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
+    type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
     type: 3}
 --- !u!1001 &655790461
 Prefab:
@@ -677,6 +1149,96 @@ Transform:
   m_PrefabParentObject: {fileID: 4403272368586016, guid: 23d3d75c286d96047bf4fa95154bf36a,
     type: 2}
   m_PrefabInternal: {fileID: 655790461}
+--- !u!1 &752265302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 752265303}
+  - component: {fileID: 752265305}
+  - component: {fileID: 752265304}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &752265303
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 752265302}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: 0.974, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 778593388}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &752265304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 752265302}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
+--- !u!212 &752265305
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 752265302}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &778593386
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,6 +1317,13 @@ Transform:
   - {fileID: 1602365001}
   - {fileID: 1356005873}
   - {fileID: 1538736802}
+  - {fileID: 752265303}
+  - {fileID: 1190872307}
+  - {fileID: 925184067}
+  - {fileID: 425743373}
+  - {fileID: 635040713}
+  - {fileID: 1233589514}
+  - {fileID: 1837661295}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -774,6 +1343,7 @@ MonoBehaviour:
   setBackAmt: -4.3
   speedIncrease: 0.0004
   normSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363, type: 3}
+  normSpikeMach: {fileID: 0}
 --- !u!1 &861866597
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,6 +1432,278 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &887600347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 887600348}
+  - component: {fileID: 887600350}
+  - component: {fileID: 887600349}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &887600348
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887600347}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: 0.375, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1230777413}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &887600349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887600347}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
+    type: 3}
+--- !u!212 &887600350
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887600347}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!1 &895167804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 895167805}
+  - component: {fileID: 895167807}
+  - component: {fileID: 895167806}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &895167805
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 895167804}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: -0.848, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1230777413}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &895167806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 895167804}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
+    type: 3}
+--- !u!212 &895167807
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 895167804}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!1 &925184066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 925184067}
+  - component: {fileID: 925184069}
+  - component: {fileID: 925184068}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &925184067
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 925184066}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: -0.569, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 778593388}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &925184068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 925184066}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
+--- !u!212 &925184069
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 925184066}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &941018277
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,6 +1766,188 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &959374186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 959374187}
+  - component: {fileID: 959374189}
+  - component: {fileID: 959374188}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &959374187
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 959374186}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: -0.257, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1230777413}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &959374188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 959374186}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
+    type: 3}
+--- !u!212 &959374189
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 959374186}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!1 &1016268569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1016268570}
+  - component: {fileID: 1016268572}
+  - component: {fileID: 1016268571}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1016268570
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016268569}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: -0.565, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1230777413}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1016268571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016268569}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
+    type: 3}
+--- !u!212 &1016268572
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016268569}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &1067763737
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,7 +1959,7 @@ GameObject:
   - component: {fileID: 1067763738}
   - component: {fileID: 1067763740}
   m_Layer: 0
-  m_Name: railroad-spike
+  m_Name: railroad-spike-henry
   m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1012,6 +2036,9 @@ MonoBehaviour:
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
     type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
+    type: 3}
 --- !u!1001 &1188389196
 Prefab:
   m_ObjectHideFlags: 0
@@ -1075,6 +2102,96 @@ Transform:
   m_PrefabParentObject: {fileID: 4403272368586016, guid: 23d3d75c286d96047bf4fa95154bf36a,
     type: 2}
   m_PrefabInternal: {fileID: 1188389196}
+--- !u!1 &1190872306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1190872307}
+  - component: {fileID: 1190872309}
+  - component: {fileID: 1190872308}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1190872307
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190872306}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: -0.852, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 778593388}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1190872308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190872306}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
+--- !u!212 &1190872309
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190872306}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &1230777410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,6 +2225,7 @@ MonoBehaviour:
   setBackAmt: -4.3
   speedIncrease: 0.0004
   normSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363, type: 3}
+  normSpikeMach: {fileID: 0}
 --- !u!212 &1230777412
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1169,9 +2287,106 @@ Transform:
   - {fileID: 1280235859}
   - {fileID: 570164001}
   - {fileID: 645681762}
+  - {fileID: 603193034}
+  - {fileID: 895167805}
+  - {fileID: 1016268570}
+  - {fileID: 959374187}
+  - {fileID: 144954278}
+  - {fileID: 887600348}
+  - {fileID: 69219086}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1233589513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1233589514}
+  - component: {fileID: 1233589516}
+  - component: {fileID: 1233589515}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1233589514
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233589513}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: 0.37100005, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 778593388}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1233589515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233589513}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
+--- !u!212 &1233589516
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233589513}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1001 &1280235858
 Prefab:
   m_ObjectHideFlags: 0
@@ -1213,7 +2428,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1854997306760418, guid: 23d3d75c286d96047bf4fa95154bf36a, type: 2}
       propertyPath: m_Name
-      value: railroad-spike
+      value: railroad-spike-henry
       objectReference: {fileID: 0}
     - target: {fileID: 1854997306760418, guid: 23d3d75c286d96047bf4fa95154bf36a, type: 2}
       propertyPath: m_TagString
@@ -1253,6 +2468,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
+    type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
     type: 3}
 --- !u!1001 &1356005872
 Prefab:
@@ -1348,7 +2566,7 @@ Prefab:
     - target: {fileID: 114603887665806018, guid: a5241c6bfe24a4a44a7f859157fcfda7,
         type: 2}
       propertyPath: ceilingSpikeHitbox
-      value: -0.18
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 114603887665806018, guid: a5241c6bfe24a4a44a7f859157fcfda7,
         type: 2}
@@ -1394,6 +2612,8 @@ MonoBehaviour:
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
     type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
 --- !u!1 &1483734547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,7 +2647,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 204.7, y: -72.5}
+  m_AnchoredPosition: {x: 229, y: -82.75}
   m_SizeDelta: {x: 409.4, y: 145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1483734549
@@ -1442,7 +2662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.39607844, g: 0.3764706, b: 0.3764706, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1450,7 +2670,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 410e97b2f3cf1f746be4dfe405365d79, type: 3}
     m_FontSize: 51
     m_FontStyle: 0
     m_BestFit: 0
@@ -1462,7 +2682,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score: 0'
+  m_Text: '  0'
 --- !u!222 &1483734550
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1568,6 +2788,8 @@ MonoBehaviour:
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
     type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
 --- !u!1001 &1538736801
 Prefab:
   m_ObjectHideFlags: 0
@@ -1703,7 +2925,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1854997306760418, guid: 23d3d75c286d96047bf4fa95154bf36a, type: 2}
       propertyPath: m_Name
-      value: railroad-spike
+      value: railroad-spike-henry
       objectReference: {fileID: 0}
     - target: {fileID: 1854997306760418, guid: 23d3d75c286d96047bf4fa95154bf36a, type: 2}
       propertyPath: m_TagString
@@ -1743,6 +2965,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
+    type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
     type: 3}
 --- !u!1 &1675557675
 GameObject:
@@ -1836,7 +3061,7 @@ GameObject:
   - component: {fileID: 1733865615}
   - component: {fileID: 1733865616}
   m_Layer: 0
-  m_Name: railroad-spike
+  m_Name: railroad-spike-henry
   m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1913,6 +3138,9 @@ MonoBehaviour:
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
     type: 3}
+  spikeDownSprite: {fileID: 21300000, guid: 66f1253f000056545bb86dcd58c18e3e, type: 3}
+  spikeDownSpriteLeft: {fileID: 21300000, guid: 954ce5f5dcc6ac344a63a3122a063bb4,
+    type: 3}
 --- !u!1 &1808156261 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1854997306760418, guid: 23d3d75c286d96047bf4fa95154bf36a,
@@ -1932,6 +3160,98 @@ MonoBehaviour:
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
     type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
+--- !u!1 &1837661294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1837661295}
+  - component: {fileID: 1837661297}
+  - component: {fileID: 1837661296}
+  m_Layer: 0
+  m_Name: railroad-spike-machine
+  m_TagString: machineSpike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1837661295
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1837661294}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23099998, y: 0.6760001, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 778593388}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1837661296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1837661294}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a74d8230fed7149858ce1267d4390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
+  nonHighlightedSpike: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577,
+    type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
+--- !u!212 &1837661297
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1837661294}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de6c092b4c3439b44afcd6326bcae577, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.05, y: 0.15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1001 &1862457582
 Prefab:
   m_ObjectHideFlags: 0
@@ -1979,6 +3299,79 @@ Transform:
   m_PrefabParentObject: {fileID: 4403272368586016, guid: 23d3d75c286d96047bf4fa95154bf36a,
     type: 2}
   m_PrefabInternal: {fileID: 1862457582}
+--- !u!1 &1935188413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1935188415}
+  - component: {fileID: 1935188414}
+  m_Layer: 0
+  m_Name: scoreboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1935188414
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935188413}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: cfce2438f2da5874d99ddb58c87ee92c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.6, y: 0.33}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!4 &1935188415
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935188413}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.17, y: 0.906, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2002732007 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1854997306760418, guid: 23d3d75c286d96047bf4fa95154bf36a,
@@ -1998,6 +3391,8 @@ MonoBehaviour:
   highlightedSpike: {fileID: 21300000, guid: e8a45048cfe6f794783971b08bfe94ce, type: 3}
   nonHighlightedSpike: {fileID: 21300000, guid: a8e0fafad9a46974794933f3475b5363,
     type: 3}
+  spikeDownSprite: {fileID: 0}
+  spikeDownSpriteLeft: {fileID: 0}
 --- !u!1 &2111085332
 GameObject:
   m_ObjectHideFlags: 0

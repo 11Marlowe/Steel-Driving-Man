@@ -7,6 +7,7 @@ public class BackGroundMoveMent : MonoBehaviour
     private Transform background;
     // this array holds all of the railway spike objects
     private GameObject[] railwaySpikes;
+    private GameObject[] machineSpikes;
     // instance of the score controller script so we can get the current score
     public ScoreController scoreScript;
     private int score;
@@ -20,6 +21,7 @@ public class BackGroundMoveMent : MonoBehaviour
     // how much the background's speed increases when the score increases
     public float speedIncrease;
     public Sprite normSpike;
+    public Sprite normSpikeMach;
 
 	// Use this for initialization
 	void Start ()
@@ -28,6 +30,7 @@ public class BackGroundMoveMent : MonoBehaviour
         backgroundMovement = new Vector3(0, 1.0f, 0);
         backToStart = new Vector3(0, setBackAmt, 0);
         railwaySpikes = GameObject.FindGameObjectsWithTag("spike");
+        machineSpikes = GameObject.FindGameObjectsWithTag("machineSpike");
         score = 0;
     }
 	
@@ -47,12 +50,19 @@ public class BackGroundMoveMent : MonoBehaviour
         // if the background has made its way out of the screen set it back to the beginning
         if(background.position.y > 2.15f)
         {
-            foreach(GameObject spike in railwaySpikes)
+            /*foreach(GameObject machSpike in machineSpikes)
+            {
+                machSpike.GetComponent<SpriteRenderer>().sprite = normSpikeMach;
+                machSpike.GetComponent<RailWaySpikeController>().setWasHit(false);
+            }*/
+
+            background.Translate(backToStart);
+
+            foreach (GameObject spike in railwaySpikes)
             {
                 spike.GetComponent<SpriteRenderer>().sprite = normSpike;
                 spike.GetComponent<RailWaySpikeController>().setWasHit(false);
             }
-            background.Translate(backToStart);
         }
     }
 }

@@ -2,25 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// this class is not currently used
 public class RailWaySpikeController : MonoBehaviour
 {
     // the spriterenderer of the spike which will allow us to change its sprite
     private SpriteRenderer spikeSprite;
     public Sprite highlightedSpike;
     public Sprite nonHighlightedSpike;
+    public Sprite spikeDownSprite;
+    public Sprite spikeDownSpriteLeft;
     private bool wasHit;
 
 	// Use this for initialization
 	void Start ()
     {
         spikeSprite = GetComponent<SpriteRenderer>();
+        wasHit = false;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-          
+
 	}
 
     // return the sprike to its non-highlighted state
@@ -54,6 +56,7 @@ public class RailWaySpikeController : MonoBehaviour
     {
         wasHit = hit;
     }
+
     public bool getWasHit()
     {
         return wasHit;

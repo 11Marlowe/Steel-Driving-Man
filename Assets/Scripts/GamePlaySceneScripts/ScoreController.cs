@@ -21,7 +21,7 @@ public class ScoreController : MonoBehaviour
     public void increaseScore()
     {
         score++;
-        scoreText.text = "Score: " + score;
+        scoreText.text = "  " + score;
     }
 
     // a getter for the score variable 
