@@ -1,0 +1,6 @@
+# Ignore build files
+[Bb]uild/
+[Bb]uilds/
+
+# Ignore misc unnecessary shit
+.DS_Store
