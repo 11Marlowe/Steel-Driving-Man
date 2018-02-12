@@ -25,6 +25,7 @@ public class JohnHenryController : MonoBehaviour
     // add some sort of animation field variable
     public AudioSource audioSource;
     public AudioClip hammerSound;
+    public Animator anim;
 
 	// Use this for initialization
 	void Start ()
@@ -35,6 +36,7 @@ public class JohnHenryController : MonoBehaviour
         health = 3;
         spikeWasHit = false;
         audioSource = GetComponent<AudioSource>();
+        anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -65,16 +67,19 @@ public class JohnHenryController : MonoBehaviour
             currentSpike.GetComponent<RailWaySpikeController>().setWasHit(true);
             // this is where animation and sound should play
             audioSource.PlayOneShot(hammerSound);
+            anim.Play("JohnHenryAnimation");
         }
         else if (Input.GetKeyDown(KeyCode.Space) && !canHammer)
         {
             health--;
             lifeBar.updateHealth(health);
             // if they miss the animation still play
+            anim.Play("JohnHenryAnimation");
         }
         else
         {
             canHammer = false;
+            // anim.Play("New State");
         }
 
         // if the players health is at 0 then the game is over, go to the score screen

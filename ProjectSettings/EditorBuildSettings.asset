@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ScoreScreen.unity
-    guid: aca630140dbfeb84885c2f5475f13183
+    path: Assets/Scenes/MainMenu.unity
+    guid: 17c6cae5112f27343affeb8157a43a3f
   - enabled: 1
     path: Assets/Scenes/GamePlay.unity
     guid: 710916dcd9c2a7f43b164d8966bc376f
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 17c6cae5112f27343affeb8157a43a3f
+    path: Assets/Scenes/ScoreScreen.unity
+    guid: aca630140dbfeb84885c2f5475f13183
