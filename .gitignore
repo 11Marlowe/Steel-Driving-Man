@@ -4,3 +4,6 @@
 
 # Ignore misc unnecessary shit
 .DS_Store
+
+# Visual Studio cache directory
+/.vs/
