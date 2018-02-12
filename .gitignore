@@ -4,7 +4,7 @@
 [Ll]ibrary/
 [Tt]emp/
 
-# Ignore misc unnecessary shit
+# Ignore misc unnecessary files
 .DS_Store
 
 # Visual Studio cache directory
