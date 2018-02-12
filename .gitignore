@@ -1,6 +1,11 @@
-# Ignore build files
+# Ignore build files and other extras
 [Bb]uild/
 [Bb]uilds/
+[Ll]ibrary/
+[Tt]emp/
 
-# Ignore misc unnecessary shit
+# Ignore misc unnecessary files
 .DS_Store
+
+# Visual Studio cache directory
+/.vs/
