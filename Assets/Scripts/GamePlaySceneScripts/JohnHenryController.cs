@@ -23,6 +23,8 @@ public class JohnHenryController : MonoBehaviour
     private GameObject currentSpike;
     public Sprite spikeDownSprite;
     // add some sort of animation field variable
+    public AudioSource audioSource;
+    public AudioClip hammerSound;
 
 	// Use this for initialization
 	void Start ()
@@ -32,6 +34,7 @@ public class JohnHenryController : MonoBehaviour
         canHammer = false;
         health = 3;
         spikeWasHit = false;
+        audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -61,6 +64,7 @@ public class JohnHenryController : MonoBehaviour
             canHammer = false;
             currentSpike.GetComponent<RailWaySpikeController>().setWasHit(true);
             // this is where animation and sound should play
+            audioSource.PlayOneShot(hammerSound);
         }
         else if (Input.GetKeyDown(KeyCode.Space) && !canHammer)
         {

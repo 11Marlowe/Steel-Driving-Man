@@ -288,6 +288,7 @@
     <Compile Include="Assets\Scripts\GamePlaySceneScripts\MachineScript.cs" />
     <Compile Include="Assets\Scripts\GamePlaySceneScripts\RailWaySpikeController.cs" />
     <Compile Include="Assets\Scripts\GamePlaySceneScripts\ScoreController.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\MenuSounds.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\PlayButton.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\QuitButton.cs" />
     <Compile Include="Assets\Scripts\ScoreScreenScripts\FinalScoreScript.cs" />
