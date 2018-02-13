@@ -11,12 +11,14 @@ public class FinalScoreScript : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
+        // set the final score to be whatever the score was whent he player lost the game
         finalScore = ScoreController.score;
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
+        // update the score on screen
         scoreText.text = "       " + finalScore; 
 	}
 }

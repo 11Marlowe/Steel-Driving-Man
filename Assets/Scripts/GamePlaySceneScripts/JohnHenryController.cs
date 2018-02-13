@@ -22,10 +22,12 @@ public class JohnHenryController : MonoBehaviour
     private bool spikeWasHit;
     private GameObject currentSpike;
     public Sprite spikeDownSprite;
-    // add some sort of animation field variable
+    // the variables holding the hammer sound and the audio source that will control it
     public AudioSource audioSource;
     public AudioClip hammerSound;
+    // the animation component on henry and the time to wait after the animation before setting the spike to be down
     public Animator anim;
+    public float waitTime;
 
 	// Use this for initialization
 	void Start ()
@@ -43,7 +45,7 @@ public class JohnHenryController : MonoBehaviour
 	void Update ()
     {   
         // check each railway spike to see if any of them are in the target area for the player to hit
-        // if they are then make canHammer true and highligh the spike, otherwise make sure the spike is not highlighted
+        // if they are then make canHammer true and highlight the spike, otherwise make sure the spike is not highlighted
         foreach (GameObject spike in railwaySpike)
         {
             if (spike.GetComponent<Transform>().position.y < ceilingSpikeHitbox
@@ -59,27 +61,26 @@ public class JohnHenryController : MonoBehaviour
             }
         }
 
-        // if the player hits the space bar and canHammer is true then increase the score otherwise lose health
+        // if the player hits the space bar and canHammer is true then increase the score,
+        // play john henry's animation, otherwise decrease player health.
         if (Input.GetKeyDown(KeyCode.Space) && canHammer)
         {
             score.increaseScore();
             canHammer = false;
-            currentSpike.GetComponent<RailWaySpikeController>().setWasHit(true);
-            // this is where animation and sound should play
-            audioSource.PlayOneShot(hammerSound);
             anim.Play("JohnHenryAnimation");
+            // coroutine to set the spike to hit
+            StartCoroutine(waitForHammerAnim());
+            audioSource.PlayOneShot(hammerSound);
         }
         else if (Input.GetKeyDown(KeyCode.Space) && !canHammer)
         {
             health--;
             lifeBar.updateHealth(health);
-            // if they miss the animation still play
             anim.Play("JohnHenryAnimation");
         }
         else
         {
             canHammer = false;
-            // anim.Play("New State");
         }
 
         // if the players health is at 0 then the game is over, go to the score screen
@@ -87,6 +88,12 @@ public class JohnHenryController : MonoBehaviour
         {
             SceneManager.LoadScene("ScoreScreen");
         }
-        
-	}
+    }
+
+    // this enumerator is used to make sure the spike going down is synced with henry's hammer hitting it
+    private IEnumerator waitForHammerAnim()
+    {
+        yield return new WaitForSeconds(waitTime);
+        currentSpike.GetComponent<RailWaySpikeController>().setWasHit(true);
+    }
 }

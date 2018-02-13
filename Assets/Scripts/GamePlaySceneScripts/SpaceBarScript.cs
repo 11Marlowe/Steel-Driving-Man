@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SpaceBarScript : MonoBehaviour
 {
+    // the gameobject which this script component is attached to
     public GameObject spacebar;
+    // how long to wait before destroying this gameobject
     public float waitTime;
 
 	// Use this for initialization
@@ -13,6 +15,7 @@ public class SpaceBarScript : MonoBehaviour
    
 	}
 
+    // play the sparbar animation and then delete it
     private IEnumerator KillOnAnimationEnd()
     {
         yield return new WaitForSeconds(waitTime);
